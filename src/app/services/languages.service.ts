@@ -10,7 +10,6 @@ export class LanguagesService {
   constructor(private http: HttpClient) {
     
    }
-
   getLanguages() {
     return this.http.get<any>("http://localhost:3000/languages");
   }
