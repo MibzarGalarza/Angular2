@@ -12,7 +12,6 @@ export class PostsService {
   getPosts() {
     return this.http.get<Posts>('http://localhost:3000/post');
   }
-
   getComments() {
     return this.http.get<Comments>('http://localhost:3000/comments');
   }
